@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Soundboard</title>
+    
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+      <audio id="intro" src="./assets/our_hip_murder_blows_soundboard.mp3" preload="auto"></audio>
+      <audio id="hailSatan" src="./assets/hail_satan.mp3" preload="auto"></audio>
+      <audio id="no_dr_pepper" src="./assets/no_dr_pepper.mp3" preload="auto"></audio>
+      <audio id="oneHundo" src="./assets/oneHundo.mp3" preload="auto"></audio>
+      <audio id="twentyCigs" src="./assets/20_mj_cigs.mp3" preload="auto"></audio>
+      <div class="soundboard">
+        <button onclick="document.getElementById('intro').play();">Our Hip Murder Blows Soundboard</button>
+        <button onclick="document.getElementById('hailSatan').play();">Hail Satan!</button>
+        <button onclick="document.getElementById('no_dr_pepper').play();">No Dr. Pepper with Violet</button>
+        <button onclick="document.getElementById('oneHundo').play();">One hundo, tight x3</button>
+        <button onclick="document.getElementById('twentyCigs').play();">20 Marijuana Cigarettes</button>
+      </div>
+  </body>
+</html>
